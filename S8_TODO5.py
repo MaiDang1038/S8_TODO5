@@ -1,11 +1,9 @@
 import streamlit as st
-# from sklearn.linear_model import LinearRegression
 import pickle
 import numpy as np
 
 st.title("Revenue Prediction")
-with open("C:/Users/HP/Downloads/VS CODE/Study_Python/MathCoding4AI/model.pickle", 'rb') as model_file:
-    model = pickle.load(model_file)
+model = pickle.load(open('model.pickle', 'rb'))
 
 inputvar = st.number_input('Input Variable')
 if st.button("Predict"):
