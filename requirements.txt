@@ -1,2 +1,2 @@
-pickles
-scikit-learn
+pickles==23.3.2
+scikit-learn==1.4.1
